@@ -22,7 +22,7 @@ app.use(express.static("public"));
 // });
 
 // ADDED > BASED  ON RESOURCE AND FUNCTIONALITY
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/budget-tracker', {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });

@@ -3,8 +3,16 @@ const APP_PREFIX = 'BudgetTracker-';
 const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION
 const FILES_TO_CACHE = [
-    "./public/index.html",
-    "./public/css/styles.css"
+    "./index.html",
+    "./css/styles.css",
+    "./icon-72x72.png",
+    "./icon-96x96.png",
+    "./icon-128x128.png",
+    "./icon-144x144.png",
+    "./icon-152x152.png",
+    "./icon-192x192.png",
+    "./icon-384x384.png",
+    "./icon-512x512.png"
     // MORE FILES TO BE ADDED LATER
 ];
 
@@ -17,7 +25,7 @@ self.addEventListener('fetch', function (e) {
                 console.log('Responding with Cache : ' + e.request.url)
                 return request
             } else {
-                console.log('file is not cahced, fetching : ' + e.request.url)
+                console.log('file is not cached, fetching : ' + e.request.url)
                 return fetch(e.request)
             }
         })
@@ -28,7 +36,7 @@ self.addEventListener('fetch', function (e) {
 self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open(CACHE_NAME).then(function (cache) {
-            console.log('installing cahce : ' + CACHE_NAME)
+            console.log('installing cache : ' + CACHE_NAME)
             return cache.addAll(FILES_TO_CAHCE)
         })
     )
