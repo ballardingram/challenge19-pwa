@@ -7,6 +7,7 @@ const FILES_TO_CACHE = [
     "./public/js/idb.js",
     "./public/js/manifest.json",
     "./public/index.html",
+    "./public/js/index.js",
     "./public/css/styles.css",
     "./public/icon-72x72.png",
     "./public/icon-96x96.png",
@@ -16,7 +17,6 @@ const FILES_TO_CACHE = [
     "./public/icon-192x192.png",
     "./public/icon-384x384.png",
     "./public/icon-512x512.png"
-    // MORE FILES TO BE ADDED LATER
 ];
 
 // FUNCTION > RESPOND WITH CACHED RESOURCES
@@ -33,7 +33,7 @@ self.addEventListener('fetch', function (e) {
             }
         })
     )
-})
+});
 
 // FUNCTION > CACHE RESOURCES
 self.addEventListener('install', function (e) {
@@ -43,7 +43,7 @@ self.addEventListener('install', function (e) {
             return cache.addAll(FILES_TO_CAHCE)
         })
     )
-})
+});
 
 // FUNCTION > DELETE OUTDATED CACHES
 self.addEventListener('activate', function(e) {
