@@ -4,16 +4,18 @@ const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION
 const FILES_TO_CACHE = [
     "/",
-    "./index.html",
-    "./css/styles.css",
-    "./icon-72x72.png",
-    "./icon-96x96.png",
-    "./icon-128x128.png",
-    "./icon-144x144.png",
-    "./icon-152x152.png",
-    "./icon-192x192.png",
-    "./icon-384x384.png",
-    "./icon-512x512.png"
+    "./public/js/idb.js",
+    "./public/js/manifest.json",
+    "./public/index.html",
+    "./public/css/styles.css",
+    "./public/icon-72x72.png",
+    "./public/icon-96x96.png",
+    "./public/icon-128x128.png",
+    "./public/icon-144x144.png",
+    "./public/icon-152x152.png",
+    "./public/icon-192x192.png",
+    "./public/icon-384x384.png",
+    "./public/icon-512x512.png"
     // MORE FILES TO BE ADDED LATER
 ];
 
