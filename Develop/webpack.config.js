@@ -47,7 +47,7 @@ const config = {
         new WebpackPwaManifest({
             name: 'Budget Tracker',
             short_name: 'Budgets',
-            description: 'An app that allows you add incoming funds and expenses.',
+            description: 'An app that allows users to add incoming funds and expenses.',
             start_url: '../public/index.html',
             background_color: '#01579b',
             theme_color: '#ffffff',
