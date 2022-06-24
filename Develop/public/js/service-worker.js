@@ -12,7 +12,6 @@ const FILES_TO_CACHE = [
     "/icons/icon-72x72.png",
     "/icons/icon-96x96.png",
     "/icons/icon-128x128.png",
-    "/icons/icon-144x144.png",
     "/icons/icon-152x152.png",
     "/icons/icon-192x192.png",
     "/icons/icon-384x384.png",
@@ -50,7 +49,7 @@ self.addEventListener('install', function (e) {
 // FUNCTION > DELETE OUTDATED CACHES
 self.addEventListener('activate', function(e) {
     e.waitUntil(
-        cahces.keys().then(function (keyList) {
+        caches.keys().then(function (keyList) {
             let cacheKeepList = keyList.filter(function (key) {
                 return key.indexOf(APP_PREFIX);
             })
