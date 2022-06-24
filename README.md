@@ -10,6 +10,7 @@ This was largely an independent project. I worked with my Tutor on some of the c
 ## Project Media
 
 ### Offline to Online Posted Transaction
-
+![Offline to Online](https://github.com/ballardingram/challenge19-pwa/blob/main/Develop/public/images/2022-06-24_16-06-28.gif)
+  
 ### Link to Deployed Site via Heroku
 https://fast-fortress-82643.herokuapp.com/
